@@ -1,13 +1,18 @@
 import React from "react";
 import { Container, Pane } from "./Styles";
 
-export const SplitScreen = ({ left: Left, right: Right }) => {
+export const SplitScreen = ({
+  left: Left,
+  right: Right,
+  leftWeight = 1,
+  rightWeight = 1,
+}) => {
   return (
     <Container>
-      <Pane>
+      <Pane weight={leftWeight}>
         <Left />
       </Pane>
-      <Pane>
+      <Pane weight={rightWeight}>
         <Right />
       </Pane>
     </Container>

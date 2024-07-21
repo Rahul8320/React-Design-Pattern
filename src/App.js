@@ -28,7 +28,14 @@ const RightComponent = () => {
 };
 
 function App() {
-  return <SplitScreen left={LeftComponent} right={RightComponent} />;
+  return (
+    <SplitScreen
+      left={LeftComponent}
+      right={RightComponent}
+      leftWeight={1}
+      rightWeight={3}
+    />
+  );
 }
 
 export default App;

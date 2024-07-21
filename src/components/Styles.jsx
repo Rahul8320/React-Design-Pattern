@@ -5,5 +5,5 @@ export const Container = styled.div`
 `;
 
 export const Pane = styled.div`
-  flex: 1;
+  flex: ${(props) => props.weight};
 `;
